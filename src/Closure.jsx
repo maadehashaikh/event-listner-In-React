@@ -8,6 +8,4 @@ function Closure () {
   }
   return inner;
 }
-Closure;
-
 export default Closure

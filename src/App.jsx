@@ -6,8 +6,11 @@ import './App.css'
 // import Form from './Form'
 // import Counter from './Counter'
 // import Activity from './Activity'
-import Closure from './Closure'
+// import Closure from './Closure'
+import UpdaterFunction from './UpdaterFunction'
+
 function App() {
+    // const InnerFunc = Closure(); => Use for closure 
     return(
         <>
         {/* <h1>Hello World !</h1>
@@ -17,7 +20,10 @@ function App() {
         {/* <Form/> */}
         {/* <Buttons/> */}
         {/* <Activity/> */}
-        <Closure/>
+        <div>
+        {/* <InnerFunc/> Render the result of the inner function */}
+        <UpdaterFunction/>
+        </div>
         </>
     )
 }
