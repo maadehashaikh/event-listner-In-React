@@ -8,7 +8,8 @@ import './App.css'
 // import Activity from './Activity'
 // import Closure from './Closure'
 // import UpdaterFunction from './UpdaterFunction'
-import LudoBoard from './LudoBoard'
+// import LudoBoard from './LudoBoard'
+import TodoList from './TodoList'
 
 
 function App() { 
@@ -26,7 +27,8 @@ function App() {
         {/* <InnerFunc/> Render the result of the inner function */}
         {/* <UpdaterFunction/> */}
         {/* </div> */}
-        <LudoBoard/>
+        {/* <LudoBoard/> */}
+        <TodoList/>
         </>
     )
 }

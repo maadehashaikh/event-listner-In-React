@@ -1,11 +1,17 @@
 import React, { useState } from 'react'
 
 function LudoBoard() {
+  // understanding Objects 
   let [moves , setMoves] = useState({blue:0 , green:0 , red:0 , yellow:0});
+  // understanding array 
+  let [arr,setArr] = useState(["no moves"]);
+
   function updateBlue () {
     setMoves((prevMove) => {
     return  {...prevMove , blue:prevMove.blue +1};
     })  
+    // concept of array's state in react 
+    // setArr([...arr , "blue moves added"]);
   }
   function updateYellow () {
     setMoves((prevMove) => {
@@ -25,6 +31,7 @@ function LudoBoard() {
   return (
     <>
     <p>Game Starts Here !</p>
+    {/* <h5>{arr}</h5> */}
     <div className='Board'>
     <p>Blue Moves ={moves.blue} </p>
     <button style={{backgroundColor:'blue'}} onClick={updateBlue}>+1</button>
